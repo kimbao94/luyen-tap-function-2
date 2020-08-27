@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let number = parseInt(prompt("nhập số"))
+    let result = check(number);
+
+    if (result) {
+        alert(number + ' là số nguyên dương');
+    } else {
+        alert(number + ' không phải số nguyên dươnng');
+    }
+
+    function check(n) {
+        if (n > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>

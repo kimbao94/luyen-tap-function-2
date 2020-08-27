@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let radius = parseInt(prompt("nhập vào bán kính hình tròn"))
+
+    function acreage(x) {
+        return  Math.pow(x, 2) * Math.PI;
+    }
+
+    function perimeter(x) {
+        return  x * 2 * Math.PI;
+    }
+
+    document.write("diện tích hình tròn là: " + parseInt(acreage(radius)) + "<br>");
+    document.write("chu vi hình tròn là: " + parseInt(perimeter(radius)));
+
+</script>

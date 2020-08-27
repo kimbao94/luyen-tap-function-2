@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    checkCrt([1, 2, 3, 1, 1, 1, 1], 4);
+
+    function checkCrt(array, character) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+
+            if (array[i] === character) {
+                count += 1;
+            }
+        }
+        if (count === 0) {
+            document.write("-1");
+
+        } else {
+            document.write(count);
+        }
+
+    }
+</script>

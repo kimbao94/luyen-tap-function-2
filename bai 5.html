@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = []
+    let n = parseInt(prompt("nhập số phần tử"));
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử thứ " + (i + 1)));
+    }
+    alert("Số có giá trị nhỏ nhất là: " + ArrayMin(arr))
+    function ArrayMin(i) {
+        var len = i.length;
+        var min = Infinity;
+        while (len--) {
+            if (i[len] < min) {
+                min = i[len];
+            }
+        }
+        return min;
+    }
+</script>
